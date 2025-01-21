@@ -1,3 +1,8 @@
+"""Kaggle Titanic competition using scikit-learn RandomForestClassifier
+
+url: https://www.kaggle.com/competitions/titanic
+"""
+
 import logging
 
 import pandas as pd
@@ -10,7 +15,7 @@ logging.basicConfig(format="%(message)s")
 
 pd.set_option("display.max_columns", None)
 
-## Load data
+## Load train data
 train_orig = pd.read_csv("/home/a/kaggle/titanic/input/train.csv")
 labels = train_orig["Survived"]
 logger.debug("Train data loaded")
@@ -39,7 +44,7 @@ pipeline = pipeline.Pipeline([
 ])
 logger.info(pipeline)
 
-## Transform data
+## Transform train data
 train = pipeline.fit_transform(train_orig)
 logger.info("Train data transformed")
 logger.info(train.info())
