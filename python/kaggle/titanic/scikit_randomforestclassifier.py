@@ -1,4 +1,4 @@
-"""Kaggle Titanic competition using scikit-learn RandomForestClassifier
+"""Kaggle Titanic competition using scikit-learn RandomForestClassifier.
 
 url: https://www.kaggle.com/competitions/titanic
 """
