@@ -25,6 +25,8 @@ Some data structure examples.
 | dict                | {x: a, y: b} | len(d) | dict(d)  | d[k] = v        | N/A**     | d.popitem()  | N/A**         | del d[k]      |
 | heapq. (def:min)    | heapify(l)   | len(h) | h[:]     | heappush(h,x)   | h[0]****  | heappop(h)   | N/A*****      | N/A*****      |
 
++ min heap: `from queue import PriorityQueue; pq.put(); pq.get()`
+
 ### Time Complexity Table for Common Data Structures in Python
 
 | DS ↓ \ Operation →  | add     | peek(end) | pop(end) | pop(idx) | del(obj/key) |
