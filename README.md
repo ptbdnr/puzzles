@@ -51,6 +51,7 @@ Some data structure examples.
 * For set: pop() removes and returns arbitrary element in O(1)
 * deque supports efficient O(1) operations at both ends: append(), appendleft(), pop(), popleft()
 * deque also supports d.appendleft(x) for adding to the beginning in O(1) time
+* heapq is min heap by defautl, to get max heap multiply values by -1
 
 
 ### Algorithms
